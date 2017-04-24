@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  #page.container-fluid
+    .row
+      .chartContainer.col-sm-6
+        .well
+          h3.text-center Line
+          canvas#lineChartCanvas
+      .chartContainer.col-sm-6
+        .well
+          h3.text-center Bar
+          canvas#barChartCanvas
+      .chartContainer.col-sm-6
+        .well
+          h3.text-center Pie
+          canvas#pieChartCanvas
+      .chartContainer.col-sm-6
+        .well
+          h3.text-center Doughnut
+          canvas#doughnutChartCanvas
+      .chartContainer.col-sm-6
+        .well
+          h3.text-center Polar Area
+          canvas#polarAreaChartCanvas
+      .chartContainer.col-sm-6
+        .well
+          h3.text-center Radar 
+          canvas#radarChartCanvas
+  script(src='js/index.js')
